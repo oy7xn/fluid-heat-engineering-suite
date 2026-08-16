@@ -26,7 +26,7 @@ reused by every page rather than re-implemented in the UI code.
 
 ```
 engineering-suite/
-├── app.py                          # Home page (Streamlit entry point)
+├── Home.py                          # Home page (Streamlit entry point)
 ├── engineering.py                  # Fluid, Pipe, HeatTransfer classes (OOP core)
 ├── pages/
 │   ├── 1_Pipe_Flow_Analyser.py
@@ -41,7 +41,7 @@ engineering-suite/
 
 ```bash
 pip install -r requirements.txt
-streamlit run app.py
+streamlit run Home.py
 ```
 
 ## Deploying to Streamlit Community Cloud
@@ -49,7 +49,7 @@ streamlit run app.py
 1. Push this repository to a **public** GitHub repo.
 2. Go to [share.streamlit.io](https://share.streamlit.io), sign in with GitHub.
 3. Click **New app**, select this repository, branch `main`, and set the
-   main file path to `app.py`.
+   main file path to `Home.py`.
 4. Click **Deploy**. Once live, copy the URL and paste it into this README
    (above) and into your developer report.
 
